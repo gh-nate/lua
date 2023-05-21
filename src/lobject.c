@@ -287,6 +287,13 @@ static const char *l_str2int (const char *s, lua_Integer *result) {
       empty = 0;
     }
   }
+  else if (s[0] == '0' && s[1] == 'b') {  /* binary? */
+    s += 2;  /* skip '0b' */
+    for (; *s == '0' || *s == '1'; s++) {  /* doubling */
+      a = a * 2 + *s - '0';
+      empty = 0;
+    }
+  }
   else {  /* decimal */
     for (; lisdigit(cast_uchar(*s)); s++) {
       int d = *s - '0';

@@ -1382,6 +1382,8 @@ plus an optional binary exponent,
 marked by a letter '<code>p</code>' or '<code>P</code>' and written in decimal.
 (For instance, <code>0x1.fp10</code> denotes 1984,
 which is <em>0x1f / 16</em> multiplied by <em>2<sup>10</sup></em>.)
+This patched version of Lua supports binary constants,
+which start with <code>0b</code>.
 
 
 <p>
@@ -1402,7 +1404,7 @@ to fit into a valid integer.
 Examples of valid integer constants are
 
 <pre>
-     3   345   0xff   0xBEBADA
+     3   345   0xff   0xBEBADA   0b1101
 </pre><p>
 Examples of valid float constants are
 

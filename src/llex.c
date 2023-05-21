@@ -217,7 +217,7 @@ static int check_next2 (LexState *ls, const char *set) {
 ** will reject ill-formed numerals. Roughly, it accepts the following
 ** pattern:
 **
-**   %d(%x|%.|([Ee][+-]?))* | 0[Xx](%x|%.|([Pp][+-]?))*
+**   %d(%x|%.|([Ee][+-]?))* | 0[Xx](%x|%.|([Pp][+-]?))* | 0b[01]+
 **
 ** The only tricky part is to accept [+-] only after a valid exponent
 ** mark, to avoid reading '3-4' or '0xe+1' as a single number.
