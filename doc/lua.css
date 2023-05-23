@@ -159,3 +159,27 @@ p.logos a:link:hover, p.logos a:visited:hover {
 img {
 	background-color: white ;
 }
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: black ;
+	}
+
+	body {
+		background-color: inherit ;
+		color: white ;
+	}
+
+	a:link, h1, h2, h3, h4 {
+		color: #599AFC ;
+	}
+
+	a:link:hover, a:visited:hover {
+		background-color: #599AFC ;
+	}
+
+	:target {
+		background-color: #599AFC ;
+		color: black ;
+	}
+}

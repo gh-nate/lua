@@ -6,4 +6,5 @@ further information about Lua, see doc/readme.html.
 
 Additional patches by gh-nate
 - Add support for binary constants
+- Add support for prefers-color-scheme: dark
 
