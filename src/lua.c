@@ -658,7 +658,7 @@ static int pmain (lua_State *L) {
     doREPL(L);  /* do read-eval-print loop */
   else if (script < 1 && !(args & (has_e | has_v))) { /* no active option? */
     if (lua_stdin_is_tty()) {  /* running in interactive mode? */
-      print_version();
+      // print_version();
       doREPL(L);  /* do read-eval-print loop */
     }
     else dofile(L, NULL);  /* executes stdin as a file */
